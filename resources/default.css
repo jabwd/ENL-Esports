@@ -1,0 +1,540 @@
+html,body
+{
+	height:100%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+body
+{
+	font-size:12pt;
+	color:rgb(54,62,65);
+}
+
+div#header
+{
+	overflow:hidden;
+	height:auto;
+	background-image:url('bg-header.jpg');
+	background-repeat:no-repeat;
+	height:254px;
+}
+
+div#preContentLoader
+{
+	display:none;
+}
+
+table#avatarWrapper
+{
+	width:900px;
+	height:auto;
+	float:left;
+	background-color:transparent;
+	border:0px;
+}
+
+table#avatarWrapper tr
+{
+	background-color:transparent;
+}
+
+div#avatarImage
+{
+	width:116px;
+	height:89px;
+	float:left;
+	overflow:hidden;
+	border:1px solid rgb(160,160,160);
+}
+
+div#avatar
+{
+	width:163px;
+	height:91px;
+	background-image:url('image-border.png');
+	background-repeat:no-repeat;
+	margin-bottom:10px;
+	padding-left:22px;
+	padding-right:23px;
+	padding-top:10px;
+	padding-bottom:8px;
+}
+
+div#loader
+{
+	width:458px;
+	height:16px;
+	padding-left:442px;
+}
+
+table#tzacStatusTable
+{
+	width:200px;
+	overflow:hidden;
+	height:auto;
+	float:left;
+	border:0px;
+	font-size:12pt;
+	padding:0px;
+}
+
+div.seperator
+{
+	width:899px;
+	height:2px;
+	margin-top:20px;
+	background-image:url('separator05.gif');
+}
+
+div#main
+{
+	padding-top:20px;
+	overflow:hidden;
+	min-height:100%;
+/*	min-height:100%;
+	overflow:hidden;
+	padding-bottom:221px;
+	margin-top:-20px !important;
+	margin-bottom:-201px !important; */
+}
+
+div.headerTop
+{
+	width:100%;
+	height:201px;
+	background-position:center top;
+	background-repeat:no-repeat;}
+
+img
+{
+	display:inline;
+	margin-top:-2px;
+	vertical-align:middle;
+}
+
+img.tableIcon
+{
+	display:inline;
+	float:left;
+	margin-top:2px;
+	margin-right:5px;
+}
+
+div.menubar
+{
+	width:850px;
+	height:51px;
+	margin:0px auto;
+}
+
+div.dropdownMenu
+{
+	width:auto;
+	float:left;
+	height:36px;
+	padding-top:15px;
+	padding-left:11px;
+	padding-right:11px;
+	-webkit-transition: background-color 300ms linear;
+	-moz-transition: background-color 300ms linear;
+}
+
+div.dropdownMenu:hover
+{
+	background-color:rgb(8,21,38);
+	-webkit-transition: background-color 250ms linear;
+	-moz-transition: background-color 250ms linear;
+	height:200px;
+	background-color:white;
+	z-index:5;
+	position:static;
+	float:none;
+	width:60px;
+}
+
+a.dropdownItem,a.dropdownItem:visited
+{
+	font-size:15pt;
+	color:white;
+	text-shadow:1px 1px 0px rgb(0,0,0);
+	text-decoration:none;
+}
+
+a.dropdownItem:hover
+{
+	color:white;
+}
+
+a,a:visited
+{
+	color:rgb(80,80,255);
+	-webkit-transition: color 200ms linear;
+	-moz-transition:color 200ms linear;
+	text-decoration:underline;
+}
+
+a:hover
+{
+	text-decoration:none;
+	color:rgb(20,20,155);
+	-webkit-transition: color 200ms linear;
+	-moz-transition: color 200ms linear;
+}
+
+a.menuItem,a.menuItem:visited
+{
+	width:auto;
+	min-width:10px;
+	height:36px;
+	float:left;
+	font-size:15pt;
+	padding-left:11px;
+	padding-right:11px;
+	padding-top:15px;
+	text-shadow:1px 1px 0px rgb(0,0,0);
+	color:white;
+	-webkit-transition: background-color 300ms linear;
+	-moz-transition: background-color 300ms linear;
+	text-decoration:none;
+}
+
+a.menuItem:hover,a.current
+{
+	/*padding-top:15px;
+	height:33px;
+	border-bottom:3px solid rgb(200,200,200);*/
+	background-color:rgb(8,21,38);
+/*	border-left:1px solid rgb(43,50,53);
+	border-right:1px solid rgb(43,50,53);
+	padding-left:10px;
+	padding-right:10px; */
+	-webkit-transition: background-color 250ms linear;
+	-webkit-transition: background-color 250ms linear;
+}
+
+/****************************************/
+/**** Tables ****************************/
+table
+{
+	width:900px;
+	height:auto;
+	font-size:13pt;
+	border:1px solid rgb(193,200,203);
+	padding:0px;
+	background-color:rgb(243,250,253);
+}
+
+table a,table a:visited
+{
+	color:black;
+}
+
+th
+{
+	color:rgb(13,20,23);
+	text-align:left;
+}
+
+tr
+{
+	background-color:rgb(243,250,253);
+/*	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear; */
+}
+
+tr.alternate
+{
+	background-color:rgb(233,240,243);
+}
+
+tr.inactive
+{
+	background-color:rgb(203,210,213);
+}
+
+tr.cheater
+{
+	background-color:rgb(255,150,150);
+}
+
+td
+{
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:5px;
+}
+
+/***************************************/
+
+/****************************************/
+/******* News **************************/
+
+span.newsAnnotation
+{
+	color:rgb(50,50,50);
+	font-size:10px;
+}
+
+span.success
+{
+	color:rgb(10,205,10);
+	text-shadow:1px 1px rgb(150,150,150);
+}
+
+div.newsItem
+{
+	width:898px;
+	height:auto;
+	min-height:10px;
+	overflow:hidden;
+	border:1px solid rgb(173,180,183);
+	/*background-color:rgb(243,250,253);*/
+	background-color:rgb(241,245,247);
+	margin-bottom:40px;
+}
+
+div.newsContent
+{
+	min-height:10px;
+	height:auto;
+	width:850px;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:5px;
+	padding-bottom:20px;
+	float:left;
+}
+
+div.newsTitle
+{
+	width:890px;
+	height:30px;
+	float:left;
+	font-size:17pt;
+	text-align:left;
+	color:black;
+	padding-top:5px;
+	padding-left:10px;
+}
+
+/****************************************/
+
+
+/****************************************/
+/******** Extra controls ***************/
+div.box
+{
+	width:878px;
+	height:auto;
+	min-height:10px;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border:1px solid rgb(183,190,193);
+	background-color:rgb(244,248,250);
+}
+
+input[type="submit"]
+{
+	width:118px;
+	height:26px;
+	background-image:url('button2.png');
+	background-repeat:no-repeat;
+	border:0px;
+	text-align:center;
+	color:rgb(80,80,80);
+	background-color:transparent;
+}
+
+input[type="submit"]:hover
+{
+	/*background-position-y:-30px;*/
+	background-image:url('button2_hover.png');
+	background-color:transparent;
+	color:rgb(50,50,50);
+}
+
+
+input.text
+{
+	width:90%;
+}
+
+input, textarea
+{
+	background-color:rgb(243,245,248);
+	border:1px solid rgb(180,180,180);
+	color:rgb(83,90,93);
+	font-size:11pt;
+}
+
+input:hover
+{
+	background-color:rgb(250,250,253);
+}
+
+div.errorDisplay
+{
+	width:500px;
+	height:auto;
+	min-height:30px;
+	background-color:rgba(255,50,50,0.6);
+	border:1px solid rgb(225,70,70);
+	color:rgb(255,250,250);
+	margin:5px auto;
+	padding:4px;
+}
+/**************************************/
+
+
+
+
+
+
+
+
+
+/****************************************/
+/**** Bracket system *******************/
+
+div.bracketsContainer
+{
+	width:880px;
+	height:auto;
+	min-height:20px;
+	margin-top:10px;
+	margin-bottom:20px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	overflow:hidden;
+	background-color:rgb(243,250,253);
+	border:1px solid rgb(193,200,203);
+}
+
+.brackets
+{
+	padding:0px;
+	margin:0px;
+	float:left;
+	width:auto;
+	min-width:10px;
+	border:0px;
+}
+
+.brackets tr
+{
+	background-color:rgb(243,250,253);
+}
+
+.brackets tr:hover
+{
+	background-color:rgb(243,250,253);
+}
+
+	.brackets td {
+		padding: 0px;
+		height: 23px;
+		overflow:hidden;	
+	}
+	
+	.brackets .filled {
+		width:auto;
+		float:left;
+		min-width: 150px;
+		height:23px;
+		border:1px solid rgb(153,160,163);
+		overflow:hidden;
+	}
+	
+	.brackets .empty
+	{
+		width:150px;
+	}
+	
+	.team {
+		padding: 5px;
+	}
+	
+	.brackets .blank {
+		width:20px;
+	}
+	
+	.brackets .blank img {
+		height: 27px;
+		width: 27px;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.brackets .hiddenBracket
+	{
+		/* nothing here */
+	}
+	
+	.brackets .filled .score {
+		width: 20px;
+		height:22px;
+		float: right;
+		margin-left:0px;
+		margin-top:-2px;
+		padding-top:3px;
+		margin-bottom:-3px;
+		margin-right: 3px;
+		border-left: 1px solid rgb(163,170,173);
+		text-align: center;
+	}
+	
+/****************************************/
+/*** Sub menu **************************/
+
+div.subMenu
+{
+	width:898px;
+	height:auto;
+	min-height:30px;
+	float:left;
+	border:1px solid rgb(193,200,203);
+	margin-bottom:10px;
+	background-color:rgb(243,250,253);
+}
+
+div.subMenu a
+{
+	width:auto;
+	min-width:20px;
+	height:24px;
+	float:left;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:6px;
+	text-decoration:none;
+	border-right:1px solid rgb(203,210,213);
+	color:black;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+}
+
+div.subMenu a:hover
+{
+	background-color:rgb(225,232,235);
+	color:black;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+}
+
+div.subMenu a.selected
+{
+	background-color:rgb(234,241,244);
+	color:black;
+}
+
+
+/***************************************/

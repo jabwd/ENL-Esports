@@ -1,0 +1,152 @@
+* html #nav ul {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-drop-c.png', sizingmethod='scale');
+}
+* html #nav .drop-b {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-drop-b.png', sizingmethod='crop');
+}
+* html #previous {
+	background: url(none.gif);
+	cursor:pointer;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-prev.png', sizingmethod='crop');
+}
+* html #next {
+	background: url(none.gif);
+	cursor:pointer;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-next.png', sizingmethod='crop');
+}
+* html .intro-box{
+	height:377px;
+}
+* html .promo-box .promo-text {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/text-welcome.png', sizingmethod='crop');
+}
+* html .steps-holder {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-steps.png', sizingmethod='crop');
+}
+* html #steps-slider .pagination {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-paging.png', sizingmethod='crop');
+}
+* html .pagination .active {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-step02.png', sizingmethod='crop');
+}
+* html .pagination a .title01 {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number01.png', sizingmethod='crop');
+}
+* html .pagination a .title02 {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number02.png', sizingmethod='crop');
+}
+* html .pagination a .title03 {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number03.png', sizingmethod='crop');
+}
+* html .pagination a .title03 {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number03.png', sizingmethod='crop');
+}
+* html .pagination a .title04 {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number04.png', sizingmethod='crop');
+}
+* html #steps-slider .pagination .active {
+	background: url(none.gif);
+	cursor:pointer;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-step-a.png', sizingmethod='crop');
+}
+* html #steps-slider .controls .previous{
+	cursor:pointer;
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-prev02.png', sizingmethod='crop');
+}
+* html #steps-slider .controls .next {
+	background: url(none.gif);
+	cursor:pointer;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/btn-next02.png', sizingmethod='crop');
+}
+* html .threecolumns .subscribe-form .submit {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-submit02.png', sizingmethod='crop');
+}
+* html .threecolumns .social-list {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-social-box.png', sizingmethod='crop');
+}
+* html .threecolumns .map-holder {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-map.png', sizingmethod='crop');
+}
+.gallery li{
+	display:inline;
+	zoom:1;
+}
+* html #intro-slider {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-image04.png', sizingmethod='crop');
+}
+* html #intro-slider .pagination a {
+	background: url(none.gif);
+	cursor:pointer;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-paging02.png', sizingmethod='crop');
+}
+* html #intro-slider .pagination .active a {
+	background: url(none.gif);
+	cursor:pointer;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-paging-a.png', sizingmethod='crop');
+}
+* html #intro-slider .stick {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/stick-template.png', sizingmethod='crop');
+}
+.breadcrumbs li{
+	background-image: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+	padding-left: expression( (this===this.parentNode.childNodes[0]) ? "0" : "auto");
+}
+* html #content .image-left {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-image-box.png', sizingmethod='crop');
+}
+* html #content .image-left{
+	margin:0 10px 0 -23px;
+}
+.paging li{
+	display:inline;
+	zoom:1;
+}
+* html .cite-box .quote-top {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-quote.png', sizingmethod='crop');
+}
+* html .cite-box .quote-bottom {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-quote02.png', sizingmethod='crop');
+}
+* html #sidebar .map-holder {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-image07.png', sizingmethod='crop');
+}
+* html #content .info-box .image {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-image08.png', sizingmethod='crop');
+}
+.portfolio-box{
+	display:inline;
+	zoom:1;
+}
+* html #sidebar .side-frame{
+	overflow:hidden;
+}
+* html .comment-box .text-box{
+	height:90px;
+	overflow:visible;
+}
+* html .product-box .image-holder {
+	background: url(none.gif);
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-image11.png', sizingmethod='crop');
+}

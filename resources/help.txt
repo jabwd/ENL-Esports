@@ -1,0 +1,12 @@
+If you have any questions then you can always contact us on IRC or through this website by private messaging an admin.
+Our IRC channel is #enl.et
+
+<h3>Frequently asked questions</h3>
+<b><i>Q: I have challenged a team, how do I enter the score when I am done playing?</i></b>
+You can enter the score on the "Matches" page. Look up your match in the "pending matches" table and then click on "Match details". There you can fill in the score.
+
+<b><i>Q: Why is there no 5on5 ladder?</i></b>
+6on6 matches are more fun on Enemy Territory. It is the original format and the extra player makes a lot more things possible. In order to support 6on6 we have decide d not to support 5on5 at all. Of course you can always decide to play a 5on5 if both teams agree.
+
+<b><i>How do I join a ladder with my team?</i></b>
+You go to <a href="ladders/">ladders</a>. You look up the ladder you want to join and then you click on "join ladder" in that table.
