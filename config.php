@@ -31,12 +31,6 @@
 //ini_set("display_errors","1");
 
 // this variable is used to calculate the amount of time the script needed to execute
-/*if( $_SERVER['REMOTE_ADDR'] != "82.176.37.190" )
-{
-	header("location: maintenance.php");
-	echo 'ENL is under maintenance, come back later!';
-	exit();
-}*/
 $_startTime = microtime(true);
 
 
@@ -47,12 +41,15 @@ $baseTitle		= "ENL - %s";
 $pageName		= "";
 $themeKey 		= 'midnight-blue'; // midnight-blue
 
+$databasePassword = '';
+$databaseUsername = 'root';
+
 $LevelAdmin 	= 10;
 $LevelModerator = 5;
 $LevelPlayer 	= 0;
 
 // connect to the database, almost every page needs it anyways
-if( ! $mysqlConnection = mysql_connect("localhost","root","canon1ds") )
+if( ! $mysqlConnection = mysql_connect("localhost",$databaseUsername,$databasePassword) )
 	ENLog("Unable to connect to mysql server: ".mysql_error());
 if( ! mysql_select_db("wolfenstein",$mysqlConnection) )
 	ENLog("Unable to select database wolfenstein");
@@ -64,6 +61,7 @@ if( $banQuery )
 {
 	if( mysql_num_rows($banQuery) > 0 )
 	{
+		// TEMP Error message, doesn't really look properly but this works..
 		die("You are banned on ENL-ESports.com, appeal this ban by going to our IRC channel on quakenet OR email the system administrator: jabwdr@gmail.com");
 	}
 }
@@ -85,7 +83,7 @@ else
 	$_SESSION['secureSessionKey'] = md5($_SERVER['REMOTE_ADDR']."929D:0(7".$_SERVER['HTTP_USER_AGENT']);
 }
 
-
+// these are some basic "libraries" we always will need
 require_once 'lib/std.php';
 require_once 'class/User.php';
 require_once 'class/Team.php';
