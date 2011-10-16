@@ -1,42 +1,13 @@
 <?php
-// Wolfenstein: Enemy Territory League
-// Copyright © 2011 Antwan van Houdt
-//******************************************************************************
-//	  This program is free software: you can redistribute it and/or modify
-//    it under the terms of the GNU General Public License as published by
-//    the Free Software Foundation, either version 3 of the License, or
-//    (at your option) any later version.
-//
-//    This program is distributed in the hope that it will be useful,
-//    but WITHOUT ANY WARRANTY; without even the implied warranty of
-//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//    GNU General Public License for more details.
-//
-//    You should have received a copy of the GNU General Public License
-//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//******************************************************************************
 
-require 'config.php';
-require_once 'class/MessageController.php';
+// change the following paths if necessary
+$yii=dirname(__FILE__).'/../../Yiic/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
 
-$pageName = 'News';
+// remove the following lines when in production mode
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+// specify how many levels of call stack should be shown in each log message
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
-$query = mysql_query("SELECT `itemID`,`title`,`content`,`creationDate`,`author` FROM `news` ORDER BY itemID DESC LIMIT 0,5");
-if( $query )
-{
-	while($row = mysql_fetch_array($query))
-	{
-		$news[] = $row;
-	}
-}
-
-//MessageController::sendPrivateMessage('jabwd','test message','Test content');
-
-if( !$_GET['ajax'] )
-	require 'template/tp.head.php';
-	
-require 'template/tp.home.php';
-
-if( !$_GET['ajax'] )
-	require 'template/tp.foot.php';
-?>
+require_once($yii);
+Yii::createWebApplication($config)->run();
