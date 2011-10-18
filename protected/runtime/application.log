@@ -1,0 +1,14 @@
+2011/10/18 23:04:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /Volumes/Server HD 2/Websites/enl-esports.dev/framework/gii/GiiModule.php:163
+Stack trace:
+#0 /Volumes/Server HD 2/Websites/enl-esports.dev/framework/web/CController.php(255): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /Volumes/Server HD 2/Websites/enl-esports.dev/framework/web/CWebApplication.php(277): CController->run('')
+#2 /Volumes/Server HD 2/Websites/enl-esports.dev/framework/web/CWebApplication.php(136): CWebApplication->runController('gii')
+#3 /Volumes/Server HD 2/Websites/enl-esports.dev/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /Volumes/Server HD 2/Websites/enl-esports.dev/index.php(14): CApplication->run()
+#5 {main} REQUEST_URI=/index.php?r=gii
+2011/10/18 23:17:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lol".' in /Volumes/Server HD 2/Websites/enl-esports.dev/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /Volumes/Server HD 2/Websites/enl-esports.dev/framework/web/CWebApplication.php(136): CWebApplication->runController('lol')
+#1 /Volumes/Server HD 2/Websites/enl-esports.dev/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /Volumes/Server HD 2/Websites/enl-esports.dev/index.php(14): CApplication->run()
+#3 {main} REQUEST_URI=/index.php?r=lol

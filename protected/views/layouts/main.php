@@ -22,7 +22,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div id="logo"></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -45,9 +45,8 @@
 	<?php echo $content; ?>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		ENL <?php echo Yii::app()->params['version']; ?> | Copyright &copy; <?php date_default_timezone_set("GMT"); echo date('Y'); ?> by Exurion.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->
