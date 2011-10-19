@@ -24,7 +24,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'primetime',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array('82.176.37.190','127.0.0.1','::1'),
 		),
 	),
 
@@ -54,7 +54,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=enl',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'canon1ds',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(

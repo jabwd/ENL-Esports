@@ -1,16 +1,18 @@
 <?php
 
 /**
- * This is the model class for table "tbl_user".
+ * This is the model class for table "users".
  *
- * The followings are the available columns in table 'tbl_user':
- * @property integer $id
+ * The followings are the available columns in table 'users':
+ * @property integer $userID
  * @property string $username
  * @property string $password
  * @property string $email
  */
 class User extends CActiveRecord
 {
+	private $_salt = '76d259050';
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return User the static model class
@@ -25,7 +27,7 @@ class User extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_user';
+		return 'users';
 	}
 
 	/**
@@ -37,10 +39,13 @@ class User extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('username, password, email', 'required'),
-			array('username, password, email', 'length', 'max'=>128),
+			array('username', 'length', 'max'=>20),
+			array('password', 'length', 'max'=>40),
+			array('email', 'length', 'max'=>100),
+			
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, password, email', 'safe', 'on'=>'search'),
+			array('userID, username, email', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,7 +66,7 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
+			'userID' => 'User',
 			'username' => 'Username',
 			'password' => 'Password',
 			'email' => 'Email',
@@ -79,13 +84,26 @@ class User extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
+		$criteria->compare('userID',$this->userID);
 		$criteria->compare('username',$this->username,true);
-		$criteria->compare('password',$this->password,true);
 		$criteria->compare('email',$this->email,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	
+	/*
+	 * AUthenticating a user
+	 */
+	public function validatePassword($p_password)
+	{
+		return $this->hashPassword($p_password,$this->_salt)===$this->password;
+	}
+	
+	public function hashPassword($p_password,$p_salt)
+	{
+		return sha1($p_salt.$p_password);
 	}
 }

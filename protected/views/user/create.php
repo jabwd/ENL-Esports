@@ -6,10 +6,17 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Manage User', 'url'=>array('admin')),
+	//array('label'=>'Manage User', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create User</h1>
+<?php
+if( !Yii::app()->user->isGuest )
+{
+	header("location: /");
+}
+?>
+
+<h1>Register on ENL</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
